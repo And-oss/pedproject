@@ -29,4 +29,9 @@ headers = {
 
 response = requests.post(url, headers=headers, json=prompt)
 result = response.text
+
+with open('file.json' , 'w') as f:
+    f.write(result)
+    f.close()
+
 print(result)
