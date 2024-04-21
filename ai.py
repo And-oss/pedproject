@@ -1,13 +1,12 @@
-api = "AQVN0TlD2PWbz_NsY_fVd4X13lp0g3xz8GIvz_cv"
-id = "b1go51mogaeuh0gh7qbc"
 import requests
+from config import api , id
 
 prompt = {
     "modelUri": f"gpt://{id}/yandexgpt-lite",
     "completionOptions": {
         "stream": False,
-        "temperature": 0.6,
-        "maxTokens": "2000"
+        "temperature": 0.8,
+        "maxTokens": "3000"
     },
     "messages": [
         {
